@@ -1,1 +1,4 @@
-export type Role = "admin" | "agent" | "customer";
+import { z } from "zod";
+
+export const roleSchema = z.enum(["admin", "agent", "customer"]);
+export type Role = z.infer<typeof roleSchema>;
