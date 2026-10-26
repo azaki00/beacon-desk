@@ -1,0 +1,5 @@
+{
+  "name": "@beacon/tickets",
+  "private": true,
+  "type": "module"
+}

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    // Type safety
+    "strict": true,
+    "noUncheckedIndexedAccess": true, // array[i] and record[key] may be undefined, so you must handle it
+
+    // Output: modern JS, since Node 22 runs ES2023 natively
+    "target": "ES2023",
+
+    // Module system: follow Node's own rules for ES modules
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext", // must match "module"
+
+    // Interop and speed
+    "esModuleInterop": true, // lets you `import x from "cjs-lib"` without errors
+    "skipLibCheck": true, // skip type-checking .d.ts files in node_modules, not your own code
+    "forceConsistentCasingInFileNames": true // avoids bugs that appear only on Linux or macOS
+  }
+}

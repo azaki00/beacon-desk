@@ -1,0 +1,5 @@
+{
+  "name": "@beacon/shared",
+  "private": true,
+  "type": "module"
+}
